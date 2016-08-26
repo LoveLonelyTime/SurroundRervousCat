@@ -25,6 +25,10 @@ public class ResourcesLoader {
 	public static final Image START_BUTTON_IMAGE = ResourcesLoader.loadImage("images/start_button.png");
 	public static final Image WELCOME_IMAGE = ResourcesLoader.loadImage("images/welcome.png");
 
+	public static final Image CAT_NORMAL_1_IMAGE = ResourcesLoader.loadImage("animation/normal_1.png");
+	public static final Image CAT_NORMAL_2_IMAGE = ResourcesLoader.loadImage("animation/normal_2.png");
+	public static final Image CAT_NORMAL_3_IMAGE = ResourcesLoader.loadImage("animation/normal_3.png");
+
 	/**
 	 * 加载图像
 	 * 

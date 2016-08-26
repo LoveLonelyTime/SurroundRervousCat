@@ -72,6 +72,19 @@ public class GameWindow extends JFrame implements MouseListener {
 					new Rectangle(WelcomeGameScene.SATRT_BUTTON_X, WelcomeGameScene.SATRT_BUTTON_Y,
 							WelcomeGameScene.SATRT_BUTTON_WIDTH, WelcomeGameScene.SATRT_BUTTON_HEIGHT))) {
 				GameSceneManager.choosePlayGameScene();
+				((PlayGameScene) GameSceneManager.PLAY_GAME_SCENE).newGame();
+			}
+		} else if (GameSceneManager.getGameScene() == GameSceneManager.PLAY_GAME_SCENE) {
+			int y = (e.getY() - PlayGameScene.START_Y) / PlayGameScene.DIAMETER + 1;
+			int x = 0;
+			if (y == 1 || y == 3 || y == 5 || y == 7 || y == 9) {
+				x = (e.getX() - PlayGameScene.LEFT_START_X) / (PlayGameScene.DIAMETER + PlayGameScene.X_MARGIN);
+			} else {
+				x = (e.getX() - PlayGameScene.RIGHT_START_X) / (PlayGameScene.DIAMETER + PlayGameScene.X_MARGIN);
+			}
+			if (PlayGameScene.map[x][y - 1] == PlayGameScene.SATTUS.EMPTY) {
+				// 有效操作
+				PlayGameScene.map[x][y - 1] = PlayGameScene.SATTUS.FULL;
 			}
 		}
 	}

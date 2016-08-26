@@ -2,6 +2,7 @@ package com.surroundrervouscat;
 
 import java.awt.Graphics;
 import java.awt.Graphics2D;
+import java.awt.RenderingHints;
 import java.awt.image.BufferedImage;
 
 import javax.swing.JPanel;
@@ -14,7 +15,10 @@ public class GamePanel extends JPanel {
 	public void paint(Graphics g) {
 		GameScene gameScene = GameSceneManager.getGameScene();
 		if (gameScene != null) {
-			gameScene.paint((Graphics2D) g, this);
+			Graphics2D g2 = (Graphics2D) g;
+			g2.setRenderingHint(RenderingHints.KEY_TEXT_ANTIALIASING, RenderingHints.VALUE_TEXT_ANTIALIAS_ON);
+			g2.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
+			gameScene.paint(g2, this);
 		} else {
 			g.fillRect(0, 0, buffer.getWidth(), buffer.getHeight());
 		}
