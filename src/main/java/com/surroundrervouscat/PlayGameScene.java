@@ -12,8 +12,8 @@ public class PlayGameScene implements GameScene {
 	public static int catY = 4;
 
 	public static final int DIAMETER = 33;
-	public static final int LEFT_START_X = 9;
-	public static final int RIGHT_START_X = 27;
+	public static final int LEFT_START_X = 15;
+	public static final int RIGHT_START_X = 15;
 
 	public static final int START_Y = 240;
 

@@ -13,15 +13,8 @@ import javax.imageio.ImageIO;
  *
  */
 public class ResourcesLoader {
-	public static final Image ABOUT_BUTTON_IMAGE = ResourcesLoader.loadImage("images/about_button.png");
-	public static final Image AGAIN_BUTTON_IMAGE = ResourcesLoader.loadImage("images/again_button.png");
 	public static final Image BACKGROUND_IMAGE = ResourcesLoader.loadImage("images/background.png");
-	public static final Image CAGE_IMAGE = ResourcesLoader.loadImage("images/cage.png");
-	public static final Image CIRCLE_IMAGE = ResourcesLoader.loadImage("images/circle.png");
-	public static final Image DIALOG_FAIL_IMAGE = ResourcesLoader.loadImage("images/dialog_fail.png");
-	public static final Image DIALOG_SUCCESSFUL_IMAGE = ResourcesLoader.loadImage("images/dialog_successful.png");
 	public static final Image INSTRUCTION_IMAGE = ResourcesLoader.loadImage("images/instruction.png");
-	public static final Image SHARE_BUTTON_IMAGE = ResourcesLoader.loadImage("images/share_button.png");
 	public static final Image START_BUTTON_IMAGE = ResourcesLoader.loadImage("images/start_button.png");
 	public static final Image WELCOME_IMAGE = ResourcesLoader.loadImage("images/welcome.png");
 
