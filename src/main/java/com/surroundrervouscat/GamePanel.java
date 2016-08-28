@@ -7,6 +7,12 @@ import java.awt.image.BufferedImage;
 
 import javax.swing.JPanel;
 
+/**
+ * 游戏画板
+ * 
+ * @author 爱寂寞的时光
+ *
+ */
 @SuppressWarnings("serial")
 public class GamePanel extends JPanel {
 	private BufferedImage buffer = new BufferedImage(GameWindow.WIDTH, GameWindow.HEIGHT, BufferedImage.TYPE_INT_ARGB);
